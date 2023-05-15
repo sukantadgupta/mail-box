@@ -55,7 +55,11 @@ const Inbox = () => {
   };
 
   useEffect(() => {
+
+   setInterval(() => {
     getMailData();
+  }, 2000);
+   
   }, []);
 
   if (loading) {
